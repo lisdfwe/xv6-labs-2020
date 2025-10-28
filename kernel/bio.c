@@ -147,8 +147,11 @@
 //     for(b =&bcache.bufmap[i];b->next;b=b->next)
 //     {
 //       if(b->next->refcnt == 0&&(!before_least || b->next->lastuse<before_least->next->lastuse ))
-//       before_least =b;
-//       new_found =1;
+// {
+//   //       before_least =b;
+// //       new_found =1;
+// }
+
 //     }
 //     if(!new_found)//如果没找到新的LRU-buf,就释放当前的锁
 //     {
